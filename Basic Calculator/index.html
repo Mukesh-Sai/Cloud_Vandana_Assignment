@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="output">
+        <input type="text" id="display" readonly>
+        <button id="clearBtn" onclick="clearDisplay()">AC</button>
+        <br>
+      </div>
+      <div class="rows">
+        <button class="digits" onclick="addCharacter('9');">9</button>
+        <button class="digits" onclick="addCharacter('8')">8</button>
+        <button class="digits" onclick="addCharacter('7')">7</button>
+        <button class="operators" onclick="addCharacter('+')">+</button>
+        <br>
+      </div>
+      <div class="rows">
+        <button class="digits" onclick="addCharacter('4')">4</button>
+        <button class="digits" onclick="addCharacter('5')">5</button>
+        <button class="digits" onclick="addCharacter('6')">6</button>
+        <button class="operators" onclick="addCharacter('-')">-</button>
+        <br>
+      </div>
+      <div class="rows">
+        <button class="digits" onclick="addCharacter('1')">1</button>
+        <button class="digits" onclick="addCharacter('2')">2</button>
+        <button class="digits" onclick="addCharacter('3')">3</button>
+        <button class="operators" onclick="addCharacter('/');">/</button>
+        <br>
+      </div>
+      <div class="rows">
+        <button class="digits" onclick="addCharacter('.')">.</button>
+        <button class="digits" onclick="addCharacter('0')">0</button>
+        <button class="digits" onclick="calculate()">=</button>
+        <button class="operators" onclick="addCharacter('x');">x</button>
+        <br>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
